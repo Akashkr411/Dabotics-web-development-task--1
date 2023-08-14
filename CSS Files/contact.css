@@ -1,0 +1,464 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	align-items: center;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url( "../Images/milad-fakurian-7W3X1dAuKqg-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+	font-family: "Arial";
+	color:#fff;
+}
+.name
+{
+	font-family: "Lucida Console";
+	float: left;
+	margin-left: 160px;
+	margin-right: 90px;
+	text-align: center;
+	font-size: 20px;
+	top: 0px; 
+}
+.navigationbar
+{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	height: 70px;
+	background-size:auto;
+	margin-left: 870px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+nav
+{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.list
+{
+	float: left;
+	margin-right: 30px;
+}
+.items
+{
+	list-style-type: none;
+	display: inline-block;
+	transition: 1.5s all;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.items:hover
+{
+	background-color:#2B54E8;
+	color:black;
+}
+.items a:hover
+{
+	color:black;
+	transition: 0.5s;
+}
+.link
+{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	padding: 30px;
+	font-family:"Segoe UI";
+}
+a
+{
+	text-decoration: none;
+	color: #fff;
+}
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.h3 {
+  color: white;
+}
+
+.ring {
+  width: 80px;
+  height: 80px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.ring:nth-child(1) {
+  border-bottom: 8px solid rgb(255, 141, 249);
+  animation: rotate1 2s linear infinite;
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotateX(50deg) rotateZ(110deg);
+  }
+
+  to {
+    transform: rotateX(50deg) rotateZ(470deg);
+  }
+}
+
+.ring:nth-child(2) {
+  border-bottom: 8px solid rgb(255,65,106);
+  animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+  }
+
+  to {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+  }
+}
+
+.ring:nth-child(3) 
+{
+  border-bottom: 8px solid rgb(0,255,255);
+  animation: rotate3 2s linear infinite;
+}
+
+@keyframes rotate3 {
+  from {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+  }
+
+  to {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+  }
+}
+
+.ring:nth-child(4) 
+{
+  border-bottom: 8px solid rgb(252, 183, 55);
+  animation: rotate4 2s linear infinite;
+}
+
+@keyframes rotate4 {
+  from {
+    transform: rotateX(70deg) rotateZ(270deg);
+  }
+
+  to {
+    transform: rotateX(70deg) rotateZ(630deg);
+  }
+}
+.animation
+{
+	position: absolute;
+	top: 60px;
+	left: 75px;
+	height: 25px;
+	width: 25px;
+}
+/*---------------------body Content-----------------------*/
+.card 
+{
+  width: 450px;
+  height: 500px;
+  background: #07182E;
+  position: absolute;
+  top: 180px;
+  left: 960px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card h2 
+{
+  z-index: 1;
+/*  color: white;*/
+  font-size: 1.8em;
+}
+
+.card::before 
+{
+  content: '';
+  position: absolute;
+  width: 250px;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  height: 130%;
+  animation: rotBGimg 2.8s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  inset: 7px;
+  border-radius: 10px;
+}  
+/*
+ .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} 
+*/
+
+
+	.title 
+	{
+	  font-size: 24px;
+	  font-weight: 900;
+	  text-align: center;
+	  color: white;
+	}
+
+	.form 
+	{
+	  margin-top: 20px;
+	  display: flex;
+	  flex-direction: column;
+	}
+
+	.group 
+	{
+	  position: relative;
+	}
+
+	.form .group label 
+	{
+	  font-size: 14px;
+	  color: rgb(99, 102, 102);
+	  position: absolute;
+	  top: -10px;
+	  left: 10px;
+	  background-color: #fff;
+	  transition: all .3s ease;
+	}
+
+	.form .group input,
+	.form .group textarea 
+	{
+	  padding: 10px;
+	  border-radius: 5px;
+	  border: 1px solid rgba(0, 0, 0, 0.2);
+	  margin-bottom: 20px;
+	  outline: 0;
+	  width: 100%;
+	  background-color: White;
+	}
+
+	.form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label 
+	{
+	  top: 10px;
+		border-radius: 5px;
+	  background-image: transparent;
+	}
+
+	.form .group input:focus,
+	.form .group textarea:focus 
+	{
+	  border-color: #3366cc;
+	}
+
+	.form .group input:focus+ label, .form .group textarea:focus +label 
+	{
+	  top: -10px;
+	  left: 10px;
+	  background-color: #fff;
+	  color: #3366cc;
+	  font-weight: 600;
+	  font-size: 14px;
+	}
+
+	.form .group textarea 
+	{
+	  resize: none;
+	  height: 100px;
+		
+	}
+
+	.form button 
+	{
+	  background-color: #3366cc;
+	  color: #fff;
+	  border: none;
+	  border-radius: 5px;
+	  padding: 10px;
+	  font-size: 16px;
+	  cursor: pointer;
+	  transition: all 0.3s ease;
+	}
+
+	.form button:hover 
+	{
+	  background-color: #27408b;
+	}
+
+/*hover */
+
+.card1 
+{
+  position: relative;
+  width: 350px;
+  height: 110px;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  display: flex;
+  padding: 10px 30px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.para {
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.7;
+  line-height: 1.4;
+	margin-bottom: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card1:hover .overlay 
+{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card1 .card1-btn 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  border: none;
+  opacity: 0;
+  scale: 0;
+  transform-origin: 0 0;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card1:hover .card1-btn 
+{
+  opacity: 1;
+  scale: 1;
+}
+
+.card1 .card1-btn:hover 
+{
+  box-shadow: 0 0 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card1 .card1-btn:active 
+{
+  scale: 0.95;
+}
+
+.overlay::after 
+{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+
+  height: 100%;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  transition: transform 0.5s ease;
+	color: black;
+}
+
+.card1:hover .overlay::after 
+{
+  transform: translate(-50%, -50%) scale(2);
+}
+
+
+.tag1
+{
+	position: absolute;
+	top:155px;
+	left:100px;
+}
+.tag2
+{
+	position: absolute;
+	top:300px;
+	left:420px;
+}
+.tag3
+{
+	position: absolute;
+	top:445px;
+	left:100px;
+}
+.tag4
+{
+	position: absolute;
+	top:590px;
+	left:420px;
+}
+a
+{
+	color: black;
+}
+.name a
+{
+	color: white;
+	text-decoration: none;
+}
